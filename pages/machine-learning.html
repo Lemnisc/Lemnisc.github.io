@@ -6,19 +6,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>    Machine learning
+        <title>Machine learning
 </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-            <link rel="stylesheet" href="./theme/css/normalize.css">
+            <link rel="stylesheet" href="../theme/css/normalize.css">
         <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="./theme/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./theme/css/main.css">
+        <link rel="stylesheet" href="../theme/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../theme/css/main.css">
 
-    <link rel="stylesheet" href="./theme/css/blog.css">
-    <link rel="stylesheet" href="./theme/css/github.css">
-        <script src="./theme/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="../theme/css/blog.css">
+    <link rel="stylesheet" href="../theme/css/github.css">
+        <script src="../theme/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -28,14 +28,14 @@
         <div id="wrapper">
 <header id="sidebar" class="side-shadow">
     <hgroup id="site-header">
-        <a id="site-title" href="."><h1><i class="icon-cogs"></i> Bouke Bommerson</h1></a>
+        <a id="site-title" href=".."><h1><i class="icon-cogs"></i> Bouke Bommerson</h1></a>
         <p id="site-desc"></p>
     </hgroup>
     <nav>
         <ul id="nav-links">
-                <li><a href="./pages/contact">Contact</a></li>
-                <li><a href="./category/projects">Projects</a></li>
-                <li><a href="./category/showcase">Showcase</a></li>
+                <li><a href="../pages/contact">Contact</a></li>
+                <li><a href="../pages">Projects</a></li>
+                <li><a href="../pages">Showcase</a></li>
         </ul>
     </nav>
 <footer id="site-info">
@@ -46,19 +46,15 @@
         Textures by <a href="http://subtlepatterns.com/" target="subtlepatterns">Subtle Pattern</a>. Font Awesome by <a href="http://fortawesome.github.io/Font-Awesome/" target="github">Dave Grandy</a>.
     </p>
 </footer></header>
-    <div id="post-container">
-        <ol id="post-list">
-            <li>
-                <article class="post-entry">
-                    <header class="entry-header">
-                        <time class="post-time" datetime="2015-11-17T17:48:00+01:00" pubdate>
-                            Tue 17 November 2015
-                        </time>
-                        <a href="./machine-learning.html" rel="bookmark"><h1>Machine learning</h1></a>
-                    </header>
-
-                    <section class="post-content">
-                        <p>My bachelor assignment was on how to detect cyberbullying in Twitter messages. Machine learning was a great way to tackle this problem.</p>
+<div id="post-container">
+    <ol id="post-list">
+        <li>
+            <article class="post-entry">
+                <header class="entry-header">
+                    <a href="../pages/machine-learning.html" rel="bookmark"><h1>Machine learning</h1></a>
+                </header>
+                <section class="post-content">
+                    <p>My bachelor assignment was on how to detect cyberbullying in Twitter messages. Machine learning was a great way to tackle this problem.</p>
 <p>For the uninitiated: Machine learning is catch-all term for when a machine (computer) is used to <em>learn</em> from certain characteristics of a dataset and apply this knowledge to do something with similar data. In short, it learns how to classify things from classified things.</p>
 <h5>Data gathering</h5>
 <p>For this to work we first need some Twitter messages that show bullying behaviour and some that don't. For a few reasons, it's also nice if the amounts of both are about equal.
@@ -86,18 +82,13 @@ If you keep annotating and re-training the classifier, the classifier will get b
 <p>It might be cool to use this to find other words that are close to strong feature words, and find and weigh them before the classifier encounters them in new data.</p>
 <h5>South Park relevance</h5>
 <p>Finally, a few days before I presented my bachelor thesis an episode of South Park came out where Butters had to go through the social media feeds of Cartman and remove all of the nasty messages. If he had access to this tool, his job would've gotten a lot easier. Although, maybe it should first be tweaked to show more nice messages than nasty, because he soon got overwhelmed with the amount of negativity he was reading. Or if the classifier gets accurate enough, he wouldn't even have to read any messages and just let the computer do the job.</p>
-<p><a href="./pdfs/Bully.pdf">Here</a> is the .pdf of the paper.</p>
-                    </section>
-                    <hr/>
-                    <aside class="post-meta">
-                        <p>Category: <a href="./category/projects.html">Projects</a></p>
-                        <p>Tags: <a href="./tag/python.html">Python</a>, <a href="./tag/java.html">Java</a>, <a href="./tag/academic-writing.html">academic writing</a>, <a href="./tag/machine-learning.html">machine learning</a>, <a href="./tag/feature-exploration.html">feature exploration</a>, </p>
-                    </aside>
-                    <hr/>
-                </article>
-            </li>
-        </ol>
-    </div>
+<p><a href="../pdfs/Bully.pdf">Here</a> is the .pdf of the paper.</p>
+                </section>
+                <hr/>
+            </article>
+        </li>
+    </ol>
+</div>
         </div>
 
 <script>
@@ -106,6 +97,6 @@ If you keep annotating and re-training the classifier, the classifier will get b
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
-        <script src="./theme/js/main.js"></script>
+        <script src="../theme/js/main.js"></script>
     </body>
 </html>
