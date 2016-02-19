@@ -5,6 +5,8 @@ body {
 
 #content-box {
   padding: 12px;
+  width: 65%;
+  margin: auto;
   /* margin: 5% auto; */
   color: #eeeeee;
   font-family: "Lato", sans-serif;
