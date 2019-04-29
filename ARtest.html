@@ -24,7 +24,7 @@
   
   <!-- <a-scene embedded arjs> -->
   <!-- <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;'> -->
-<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: AR_MATRIX_CODE_4x4_BCH_13_5_5;'>
 
     <!-- create your content here. just a box for now -->
     <!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
@@ -44,9 +44,9 @@
             <!-- <a-box position='0 0.5 0' color="yellow"></a-box> -->
             <a-video src="#video" rotation="-90 0 0"></a-video>
         </a-marker>
-<!-- <a-marker-camera  id='video' type='barcode' value='3'>
-  <a-video src="#video" rotation="-90 0 0"></a-video>
-</a-marker-camera> -->
+  <!-- <a-marker-camera  id='video' type='barcode' value='3'>
+    <a-video src="#video" rotation="-90 0 0"></a-video>
+  </a-marker-camera> -->
 
 
     <!-- define a camera which will move according to the marker position -->
