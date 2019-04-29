@@ -26,21 +26,38 @@
     <!-- create your content here. just a box for now -->
     <!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
 
-    <a-assets>
+<!--     <a-assets>
       <a-asset-item id="block" src="/test.gltf"></a-asset-item>
       <a-asset-item id="video" autoplay loop="true" src="./a.mp4">
     </a-assets>
 
         <a-entity 
           gltf-model= "#block" animation-mixer>
-        </a-entity>
+        </a-entity> -->
 
     <!-- define a camera which will move according to the marker position -->
     <!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
-
+<!-- 
 <a-marker-camera type='barcode' value='03'>
   <a-video src="#video" width="8" height="4.5" position="0 1 -1"></a-video>
-</a-marker-camera>
+</a-marker-camera> -->
+
+       <a-assets>
+            <a-asset-item id="video" autoplay loop="true" src="./a.mp4"></a-asset-item>
+        </a-assets>
+
+        <a-marker type='barcode' value='7'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
+
+        <a-marker id="animated-marker" type='barcode' value='3'>
+            <a-entity
+                gltf-model="#video"
+                scale="1">
+            </a-entity>
+</a-marker>
+
+<a-entity camera></a-entity>
 
   </a-scene>
 </body>
