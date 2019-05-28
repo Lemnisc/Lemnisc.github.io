@@ -14,14 +14,15 @@
 		</a-marker> -->
 
 	  	<a-assets>
-	      <a-asset-item id="block" src="/ARDelftFlute17.glb"></a-asset-item>
+	      <a-asset-item id="flute" src="/ARDelftFlute17.glb"></a-asset-item>
+	      <a-asset-item id="eik" src="/Tegelijk15SidedCycles280.glb"></a-asset-item>
 	    </a-assets>
 
 
 		<!-- Delft Flute -->
 		<a-marker type='barcode' value=1>
 		<a-entity scale="0.5 0.5 0.5"
-          gltf-model= "#block" animation-mixer>
+          gltf-model= "#flute" animation-mixer>
         </a-entity>
 			<!-- <a-box position='0 0.5 0' material='opacity: 0.5; side: double;color:red;'>
 				<a-torus-knot radius='0.26' radius-tubular='0.05'>
@@ -52,7 +53,9 @@
 		
 		<!-- Tegeleik -->
 		<a-marker type='barcode' value=6>
-	      <a-asset-item id="block" src="/Tegelijk15SidedCycles280.glb"></a-asset-item>
+		<a-entity scale="0.5 0.5 0.5"
+          gltf-model= "#eik" animation-mixer>
+        </a-entity>
 		</a-marker>
 		
 		<!-- Pixelgoal -->
